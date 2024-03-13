@@ -56,7 +56,7 @@ public class ReusableFunctions {
 	public FileInputStream fi;
 	public Actions actions;
 	public JavascriptExecutor js;
-	public Workbook wb;
+	public Workbook wb ;
 	public Sheet sh;
 	public Row r;
 	public Cell c;
