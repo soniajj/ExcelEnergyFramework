@@ -1,10 +1,17 @@
 package com.objectrepository;
 
+import org.openqa.selenium.By;
+
 public class Locators {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	public final By signIN_From = By.linkText("Sign In");
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
