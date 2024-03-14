@@ -338,6 +338,7 @@ public class ReusableFunctions {
 	 * @throws Exception
 	 ************/
 	public void takeScreenshot(String name) throws Exception {
+		Thread.sleep(3000);
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String screenshotPath = ".\\Screenshots\\";
 		FileHandler.copy(scrFile, new File(screenshotPath + name + timestamp() + ".PNG"));
