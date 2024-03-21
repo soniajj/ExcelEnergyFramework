@@ -27,6 +27,7 @@ public class Locators {
 	public final By Map_button = By.id("mapTab-12");
 	
 
-	
+	public final By Enroll_Auto_Pay_Hyperlink = By.xpath("//a[text()='Enroll in Auto Pay Today']");
+	public final By Sign_In_Page_validation = By.id("sign-in-header");
 	
 }

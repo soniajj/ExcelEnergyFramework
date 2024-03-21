@@ -23,20 +23,15 @@ public class TS_004_PayBill3 extends ReusableFunctions {
 		clickByAnyLocator(loc.PayBill_Menu_Hyperlink);
 		scrollIntoView(loc.WaystoPay_Hyperlink); 
 		clickUsingJavaScript(loc.WaystoPay_Hyperlink);
-		clickByAnyLocator(loc.Find_A_Pay_Hyperlink);
+		clickByAnyLocator(loc.Enroll_Auto_Pay_Hyperlink);
 		Thread.sleep(3000);
-		clickByAnyLocator(loc.State_Name_Hyperlink);
-		//switchToNewTab();
-		sendKeysByAnyLocator(loc.State_city_zipCode_box, "Zipcode");
-		clickByAnyLocator(loc.Search_Box);
-		clickByAnyLocator(loc.Map_button);
-		
+		getTextFromElement(loc.Sign_In_Page_validation);
 		
 	}
 
 	@AfterMethod
 	public void takescreenshotAfterMethod() throws Exception {
-		takeScreenshot("TS_003_PayBill2 ");
+		takeScreenshot("TS_004_PayBill3 ");
 	}
 
 	@AfterClass
