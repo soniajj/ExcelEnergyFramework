@@ -25,7 +25,7 @@ public class TS_003_PayBill2 extends ReusableFunctions {
 		clickUsingJavaScript(loc.WaystoPay_Hyperlink);
 		clickByAnyLocator(loc.Find_A_Pay_Hyperlink);
 		Thread.sleep(3000);
-clickByAnyLocator(loc.State_Name_Hyperlink);
+        clickByAnyLocator(loc.State_Name_Hyperlink);
 		Thread.sleep(5000);
 		sendKeysByAnyLocator(loc.State_city_zipCode_box, "Zipcode");
 		clickByAnyLocator(loc.Search_Box);
