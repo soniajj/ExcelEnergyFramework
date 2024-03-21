@@ -859,10 +859,19 @@ public class ReusableFunctions {
 	public void scrollIntoView(By locator) {
 		WebElement element = driver.findElement(locator);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		js.executeScript("arguments[0].scrollIntoView();", element);
 		System.out.println("Page scroll done");
 	}
-
+	public void scrollToXY(By locator) {
+		WebElement element = driver.findElement(locator);
+		JavascriptExecutor js = (JavascriptExecutor) driver;		
+		js.executeScript("window.scrollBy(0,250);", element);
+		System.out.println("Page scroll done");
+	}
+	
+	
+	
 	// Uploading file using Selenium-WebDriver
 	public static void uploadFile(By locator, String path) {
 		driver.findElement(locator).sendKeys(path);

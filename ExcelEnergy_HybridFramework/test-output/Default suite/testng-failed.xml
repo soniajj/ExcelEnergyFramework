@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testscenarios.TS_002_PayBill">
+      <class name="com.testscenarios.TS_003_PayBill2">
         <methods>
           <include name="takescreenshotAfterMethod"/>
-          <include name="closeTheBrowser"/>
-          <include name="TS_001_Login_InvalidTestData"/>
           <include name="launchBrowser"/>
+          <include name="tc_003_PayBill2"/>
         </methods>
-      </class> <!-- com.testscenarios.TS_002_PayBill -->
+      </class> <!-- com.testscenarios.TS_003_PayBill2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

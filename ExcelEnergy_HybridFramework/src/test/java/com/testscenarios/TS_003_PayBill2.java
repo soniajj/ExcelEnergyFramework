@@ -16,7 +16,7 @@ public class TS_003_PayBill2 extends ReusableFunctions {
 	}
 
 	@Test
-	public void TS_001_Login_InvalidTestData() throws Exception {
+	public void tc_003_PayBill2() throws Exception {
 
 		getURL("ExcelEnergy_URL");
 		Thread.sleep(6000);
@@ -24,11 +24,15 @@ public class TS_003_PayBill2 extends ReusableFunctions {
 		scrollIntoView(loc.WaystoPay_Hyperlink); 
 		clickUsingJavaScript(loc.WaystoPay_Hyperlink);
 		clickByAnyLocator(loc.Find_A_Pay_Hyperlink);
-		Thread.sleep(3000);
-        clickByAnyLocator(loc.State_Name_Hyperlink);
 		Thread.sleep(5000);
+		clickByAnyLocator(loc.Minnesota_stateName);
+		Thread.sleep(5000);
+		scrollToXY(loc.State_city_zipCode_box);
 		sendKeysByAnyLocator(loc.State_city_zipCode_box, "Zipcode");
+		scrollToXY(loc.Search_Box);
 		clickByAnyLocator(loc.Search_Box);
+		Thread.sleep(5000);
+		takeScreenshot("TS_003_PayBill2_searchResults ");	
 		clickByAnyLocator(loc.Map_button);
 		
 		
@@ -39,7 +43,7 @@ public class TS_003_PayBill2 extends ReusableFunctions {
 		takeScreenshot("TS_003_PayBill2 ");
 	}
 
-	@AfterClass
+	//@AfterClass
 	public void closeTheBrowser() {
 		driver.quit();
 	}

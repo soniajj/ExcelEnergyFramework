@@ -16,7 +16,7 @@ public class TS_002_PayBill extends ReusableFunctions {
 	}
 
 	@Test
-	public void TS_001_Login_InvalidTestData() throws Exception {
+	public void tc_002_PayBill() throws Exception {
 
 		getURL("ExcelEnergy_URL");
 		Thread.sleep(6000);

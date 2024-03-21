@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 public class Locators {
 
 	public final By signIN_From = By.xpath("//a[text()='Sign In']");
-	public final By userName_box = By.name("username");
-	public final By password_box = By.name("password");
+	public final By userName_box = By.xpath("(//input[@name='username'])[4]");
+	public final By password_box = By.xpath("(//input[@name='password'])[6]");
 	public final By sign_In_button = By.xpath("//*[@id=\"gigya-login-form\"]/div[1]/div[9]/input");
 	
 	public final By Username_errorMassage_From = By.id("error-form-email");	
@@ -20,11 +20,13 @@ public class Locators {
 	public final By LookUp_Button = By.id("ctl00_BodyPlaceholder_btnLookUp");
 	public final By lookupPage_validationMessage = By.id("ctl00_BodyPlaceholder_vsOTPValidations");
 	
+	public final By Minnesota_stateName = By.xpath("//*[text()='Minnesota']");
+	
 	public final By Find_A_Pay_Hyperlink = By.xpath("//a[text()='Find a Pay Station']");
-	public final By State_Name_Hyperlink = By.xpath("//a[text()='Minnesota']");
-	public final By State_city_zipCode_box = By.id("pay-station-search-15");
-	public final By Search_Box = By.xpath("//*[@id=\"xeg-main\"]/div/div/div[4]/c-xe-find-a-pay-station/section/div/div[1]/div[1]/c-xe-find-a-pay-station-search/div/button");
-	public final By Map_button = By.id("mapTab-12");
+	public final By State_city_zipCode_box = By.xpath("//input[@placeholder='City, State or Zip']"); 
+	                                                
+	public final By Search_Box = By.xpath("//button[contains(@class,'search-button')]");
+	public final By Map_button = By.xpath("//*[text()='Map View']");
 	
 
 	public final By Enroll_Auto_Pay_Hyperlink = By.xpath("//a[text()='Enroll in Auto Pay Today']");
